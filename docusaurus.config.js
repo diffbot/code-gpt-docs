@@ -34,6 +34,11 @@ const config = {
         label: '中文',
         direction: 'ltr',
       },
+      {
+      ch: {
+        label: 'Chino',
+        direction: 'ltr',
+      }
     },
   },
   plugins: [
