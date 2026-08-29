@@ -31,7 +31,7 @@ Opensource project to run, create, and share large language models (LLMs).
 
 - Pick the `Local LLMs` and select `Ollama` as `Provider`.
 - Use the models available directly.
-- Paste the link of the server where the model is running. For localhost: `htttp://localhost:11434`. 
+- Paste the link of the server where the model is running. For localhost: `http://localhost:11434`. 
 - Click outside the options and ask to chat.
 
 <p align="center"><img width="537" height="771" alt="image" src="https://github.com/user-attachments/assets/6471e45a-b971-41cf-9033-fbf538c1e800" /></p>
