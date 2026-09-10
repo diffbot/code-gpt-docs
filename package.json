@@ -30,7 +30,55 @@
   },
   "overrides": {
     "react": "$react",
-    "react-dom": "$react-dom"
+    "react-dom": "$react-dom",
+    "@docusaurus/core": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-content-blog": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-content-docs": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-content-pages": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-debug": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-google-analytics": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-google-gtag": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-google-tag-manager": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/plugin-sitemap": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/preset-classic": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/theme-classic": {
+      "websocket-driver": "0.7.5"
+    },
+    "@docusaurus/theme-common": {
+      "websocket-driver": "0.7.5"
+    },
+    "faye-websocket": {
+      "websocket-driver": "0.7.5"
+    },
+    "sockjs": {
+      "websocket-driver": "0.7.5"
+    },
+    "webpack-dev-server": {
+      "websocket-driver": "0.7.5"
+    },
+    "websocket-driver": {
+      "websocket-driver": "0.7.5"
+    }
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.2.0"
