@@ -30,7 +30,55 @@
   },
   "overrides": {
     "react": "$react",
-    "react-dom": "$react-dom"
+    "react-dom": "$react-dom",
+    "@docusaurus/core": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-content-blog": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-content-docs": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-content-pages": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-debug": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-google-analytics": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-google-gtag": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-google-tag-manager": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/plugin-sitemap": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/preset-classic": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/theme-classic": {
+      "shell-quote": "1.9.0"
+    },
+    "@docusaurus/theme-common": {
+      "shell-quote": "1.9.0"
+    },
+    "launch-editor": {
+      "shell-quote": "1.9.0"
+    },
+    "react-dev-utils": {
+      "shell-quote": "1.9.0"
+    },
+    "shell-quote": {
+      "shell-quote": "1.9.0"
+    },
+    "webpack-dev-server": {
+      "shell-quote": "1.9.0"
+    }
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.2.0"
