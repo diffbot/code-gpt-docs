@@ -7,28 +7,30 @@ sidebar_position: 7
 Official website https://azure.microsoft.com/en-us/products/ai-services/openai-service
 
 ## Microsoft Azure
+
 - Create an account in [Microsoft Azure](https://azure.microsoft.com/en-us/free).
 - Get access to [Azure OpenAI Services](https://azure.microsoft.com/en-us/products/ai-services/openai-service).
-- Go to [Azure OpenAI Studio](https://oai.azure.com/)
-- Get your `Secret Key` and the `Custom Link`.
-- To obtain the endpoint and the secret, you must deploy the model and then open it in Azure OpenAI Studio. Then select "View Code"
-- This section provides the API key and the custom link. To display the full custom link, select CURL in the code selection and copy the endpoint.
-- On the VSCode CodeGPT Extension, change the model on the chat.
+- Go to [Azure AI Foundry](https://ai.azure.com/) (formerly Azure OpenAI Studio) and deploy a model. Note the **deployment name** you give it.
+- Open the deployment and select **View code**. It shows two things you need:
+  - the **API key**
+  - the **endpoint**. Either form works in CodeGPT:
+    - the resource host only, for example `https://my-resource.openai.azure.com`
+    - the full request URL from the code sample, for example `https://my-resource.openai.azure.com/openai/deployments/my-deployment/chat/completions?api-version=2024-10-21`. When you paste this form, CodeGPT uses the deployment and api-version from it.
+- In the CodeGPT extension, open **Select your model** → **Manage Models** → **API Keys** and pick **Azure** as the provider.
+- Paste the endpoint into **Custom Link** and the key into **API Key**, then click **Connect**.
+- Select a model. The model name must be your **deployment name** as shown in Azure, not the underlying model's name. If your deployment is not in the list, type it in.
+- Click outside the options and ask something in the chat.
 
-<p align="center"><img width="550" height="400" src="https://github.com/user-attachments/assets/654fde38-2dac-453c-9769-830a70086504"/></p>
-
-
-- Pick the `LLMs Cloud model` and select `Azure` as `Provider`.
-- Select a model.
-- Paste `API Key` here, and click on `Connect`.
-- Click outside the options and ask to chat.
-
-  <p align="center"><img width="550" height="400" src="https://github.com/user-attachments/assets/e5658252-9b32-4d65-85c1-8f5fcdd8ad44"/></p>
+:::note api-version
+If you paste only the resource host, CodeGPT calls the `2024-10-21` API version. To use a different version, paste the full request URL from **View code** and CodeGPT will use the api-version it contains.
+:::
 
 :::caution Remove or edit Key
 To remove your API Key from CodeGPT, click on `Change connection settings` button
- <p align="center"><img width="550" height="400" src="https://github.com/user-attachments/assets/9a0ae15f-b719-4b8a-ac3e-7e856dc319de"/></p>
 :::
 
 ## API Errors
-If you are getting API errors check the following link: [Microsoft Azure Documentation](https://azure.microsoft.com/en-us/products/ai-services/openai-service/)
+
+- `404 Resource not found`: the model name in CodeGPT does not match a deployment name in your resource, or the endpoint points at a different resource.
+- `401 Access denied`: wrong key, or the key belongs to another resource.
+- Other errors: check the [Microsoft Azure Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference).
