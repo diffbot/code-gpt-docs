@@ -30,7 +30,7 @@ Official website https://docs.docker.com
 
 - Pick the `Local Models` and select `Docker` as `Provider`.
 - Use the models available directly.
-- Paste the link of the server where the model is running. For localhost: `htttp://localhost:12434`. 
+- Paste the link of the server where the model is running. For localhost: `http://localhost:12434`. 
 - Click outside the options and ask to chat.
 
 <p align="center"><img width="550" height="400" src="https://github.com/user-attachments/assets/77c4631c-5cec-4594-8d5b-6775866231d1"/></p>
