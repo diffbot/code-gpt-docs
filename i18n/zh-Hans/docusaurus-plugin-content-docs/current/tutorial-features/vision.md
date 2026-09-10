@@ -1,4 +1,4 @@
-```markdown
+---
 sidebar_position: 5
 ---
 
@@ -30,4 +30,3 @@ sidebar_position: 5
   <img width="800" height="650" src="https://github.com/user-attachments/assets/8c189ca6-106c-4f21-b928-0a8f94d0cf26"/>
 </p>
 :::
-```
